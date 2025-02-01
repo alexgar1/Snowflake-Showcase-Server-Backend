@@ -1,0 +1,51 @@
+/**
+ * Minimalist CSS for snowflake showcase
+ * Konstantin Shkurko
+ * 02.22.12
+ */
+
+body{
+	background-color: #000;
+	color: #ddd;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+td{
+	font-size: 0.75em;
+	text-align: center;
+	vertical-align: text-bottom;
+	border-bottom: 1px solid #aaf;
+}
+img{
+	border: 0px;
+	padding-bottom: 5px;
+}
+a, a:visited {
+	text-decoration: none;
+	color: #9999ff;
+}
+a:hover {
+	text-decoration: underline;
+	color: #ff0033;
+}
+a.refreshActive {
+	color: #ff0000;
+	font-weight: bold;
+}
+a img, a:visited img{
+	border: 1px solid #000000;
+}
+a:hover img {
+	border: 1px solid #9999ff;
+}
+.smaller {
+	font-size: 0.85em;
+}
+.button {
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #1e00dd;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}

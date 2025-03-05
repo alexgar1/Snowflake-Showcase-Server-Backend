@@ -38,7 +38,7 @@ Density - Measured in kg/m³.
 
 Weather data is retrieved from the Alta Ski Resort Synoptic station (ATH20) using the Synoptic API. The collected data includes:
 
-Air Temperature (°C)
+Air Temperature (C)
 
 Relative Humidity (%)
 
@@ -89,45 +89,3 @@ Uses Bokeh to create interactive plots for SWE, density, accumulation, temperatu
 Generate Webpage:
 
 Creates an interactive index.html page with dropdown options to explore different storms.
-
-Example Code Snippets
-
-Convert Time to Float
-
-def convertTimeToFloat(time):
-    """ Convert a timestamp to a float representation """
-    time_format = "%d-%b-%Y %H:%M:%S"
-    dt_obj = datetime.strptime(time, time_format).timestamp()
-    return dt_obj
-
-Fetch Synoptic Weather Data
-
-def get_station_timeseries(token, station_id, start, end, variables, units='metric'):
-    base_url = "https://api.synopticdata.com/v2/stations/timeseries"
-    params = {
-        'token': token,
-        'stid': station_id,
-        'start': start,
-        'end': end,
-        'vars': variables,
-        'units': units
-    }
-    response = requests.get(base_url, params=params)
-    return response.json() if response.status_code == 200 else None
-
-Generate Snowflake Image Gallery
-
-def generate_html_page(options, storm, imageshtml):
-    return f"""
-    <html>
-    <head>
-        <title>Snowflake Showcase</title>
-        <link rel="stylesheet" type="text/css" href="../css/data.css">
-    </head>
-    <body>
-        <h1>SNOWFLAKE SHOWCASE</h1>
-        <select id="pageSelector">{options}</select>
-        <div id="plotContainer"></div>
-    </body>
-    </html>
-    """

@@ -131,17 +131,3 @@ def generate_html_page(options, storm, imageshtml):
     </body>
     </html>
     """
-
-Installation & Setup
-
-Prerequisites
-
-Python 3.7+
-
-Bokeh (for interactive plots)
-
-Requests (for API calls)
-
-Pandas (for data processing)
-
-Installation

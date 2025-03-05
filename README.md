@@ -1,5 +1,7 @@
 # Snowflake Showcase
 
+https://www.inscc.utah.edu/~snowflake3/data/
+
 ## Overview
 
 The Snowflake Showcase is a web-based visualization platform for displaying snowflake images captured by the University of Utah’s Multi-Angle Snowflake Camera (MASC) and corresponding meteorological data. It integrates DEID (Differential Emissivity Imaging Disdrometer) data and Synoptic MesoWest station data from instruments located near the Alta Ski Resort.
